@@ -1,0 +1,114 @@
+/********************************************************
+
+->width y height -> ancho y alto de los objetos
+
+->background -> Fondo de los objetos
+
+->background-attachement: fixed; -> para poner los fondos inmoviles
+
+->background-repeat:no-repeat  -> para que los fondos no se repitan
+
+->margin -> Margenes externos de los objetos relativos a la pagina
+
+->padding -> Margenes internos de los objetos
+
+->en los padding y margin los px si solo se coloca 1 representa margenes 
+universales, con 2 se espesifican margenes (arriba-abajos, izq-derecha) 
+y con cuatro (arriba, abajo, izq, derecha) 
+
+->border -> Modifica el borde de los objetos (se especifica el grosor y 
+luego el tipo de borde (solid) y su color)
+
+->display (como se veran los objetos) -> por defecto estan en block y
+otra de sus aributos es inline que permite agrupar uno al lado del otro. Nota:
+no permite cambios en margin, padding, width o height; otra atributo es 
+inline-block esta permite la manipulacion de los margin, padding, width o height;
+
+->Color  -> para poner color a los elementos como letras
+
+
+***************POCISIONAMIENTO DE LAS CAJAS*************
+->position: ->relative -> absolute
+	->top ->
+	->bottom ->
+	->left ->
+	->right -> 
+
+
+************************Texto***************************
+text-aline: left, right, center, justify; para acomodar la posicione de los textos
+text-decoration: underline, none, overline, line-through; -> para poner o quitar las lideas de subrayado
+text-transform: capitalize, uppercase, lowercase; -> permite la modificacion des los textos con mayusculas y minusculas
+text-shadow: ; ->Agrega sonbras a los textos
+********************************************************/
+
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+body{
+	background: #e6e6e6e6;
+}
+
+header, .main, footer{
+	
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+header nav{
+	background: #528fd5;
+	overflow: hidden;
+}
+
+header nav ul{
+	list-style: none;
+}
+
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	padding: 10px 20px;
+	display:block;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+header nav ul li a:hover{
+	background: #75ac;
+}
+
+.main .articles{
+	width: 68.5%;
+	margin-right: 1.5%;
+	float: left;
+	background: white;
+}
+
+.main .articles article{
+	padding: 20px;
+	background: white;
+	margin-bottom: 20px; 	
+	text-align: justify; 
+}
+
+aside {
+	width: 30%;
+	background: #ff8000;
+	float: left;
+	box-sizing: border-box;
+}
+
+footer{
+	background: #000;
+	color:#fff;
+	clear:both;
+	padding: 10px 5px;
+}
